@@ -1,0 +1,81 @@
+{
+  "imagem1": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto1/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto1/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto1/large.png"
+    }
+   },
+
+  "imagem2": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto2/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto2/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto2/large.png"
+    }
+   },
+
+  "imagem3": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto3/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto3/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto3/large.png"
+    }
+   },
+
+  "imagem4": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto4/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto4/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto4/large.png"
+    }
+   },
+
+  "imagem5": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto5/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto5/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto5/large.png"
+    }
+   },
+
+  "imagem6": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto6/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto6/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto6/large.png"
+    }
+   },
+
+  "imagem7": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto7/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto7/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto7/large.png"
+    }
+   },
+
+  "imagem8": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto8/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto8/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto8/large.png"
+    }
+   },
+
+  "imagem9": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto9/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto9/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto9/large.png"
+    }
+   },
+
+  "imagem10": {
+    {
+      "small":  "https://samuellp.github.io/challenge/fotos/foto10/small.png"
+      "medium": "https://samuellp.github.io/challenge/fotos/foto10/medium.png"
+      "large":  "https://samuellp.github.io/challenge/fotos/foto10/large.png"
+    }
+   }    
+}
