@@ -1,15 +1,7 @@
 package implementation;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.net.URL;
-import javax.imageio.ImageIO;
-import net.coobird.thumbnailator.Thumbnails;
 import org.apache.commons.io.IOUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -21,7 +13,7 @@ import org.json.simple.JSONValue;
  */
 public class Photo {
     
-    public void resize(String urlJson){
+    public boolean resize(String urlJson){
         
         Thread[] threads;
         
@@ -30,14 +22,14 @@ public class Photo {
         JSONObject jsonObject;
         JSONArray jsonArray;
         
-        MongoClient mongo = new MongoClient("localhost",27017);
+        MongoClient mongo;
         
         try{
             
             threads = new Thread[100];
             
             
-            //db = mongo.getDB("challenge");
+            mongo = new MongoClient("localhost",27017);
             
             
             jsonString = IOUtils.toString(new URL(urlJson).openStream());
@@ -58,24 +50,14 @@ public class Photo {
                 threads[j+1].start();
                 threads[j+2].start();
                 
-                //while(thread1.isAlive() || thread2.isAlive() || thread3.isAlive()) { }
-                //bufferedImage = Thumbnails.of(new URL((String)jsonObject.get("url"))).size(320, 240).outputFormat("jpg").asBufferedImage();
-                //document.put("small","oi");
-                //ImageIO.write(bufferedImage, "png", new File("/tmp/small.png"));
-                //bufferedImage = Thumbnails.of(new URL((String)jsonObject.get("url"))).size(384, 288).outputFormat("jpg").asBufferedImage();
-                //document.put("medium","oi");
-                //ImageIO.write(bufferedImage, "png", new File("/tmp/medium.png"));
-                //bufferedImage = Thumbnails.of(new URL((String)jsonObject.get("url"))).size(640, 480).outputFormat("jpg").asBufferedImage();
-                //document.put("large","oi");
-                //ImageIO.write(bufferedImage, "png", new File("/tmp/large.png"));
-                
-                //dbCollection.insert(document);
                 j += 3;
             }
             
+            return true;
             
         }catch(Exception e){
             System.out.println("Erro durante a execução!");
+            return false;
         }
         
     }

@@ -44,8 +44,8 @@ public class DataBase implements Runnable{
             else
                 bufferedImage = Thumbnails.of(this.photo).size(640, 480).outputFormat("jpg").asBufferedImage();
             
-            db = mongo.getDB("test");
-            dbCollection = db.getCollection("user");
+            db = mongo.getDB("challenge");
+            dbCollection = db.getCollection("photos");
             
             gridFS = new GridFS(db, "photo");
             gridFSInputFile = gridFS.createFile(this.photo.openStream());
